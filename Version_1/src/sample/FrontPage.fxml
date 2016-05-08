@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogIn">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="640.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pictures/1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="129.0" layoutY="71.0" text="WELCOME TO ONLINE MCQ EXAM" textFill="#656060">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LogInName" layoutX="248.0" layoutY="140.0" promptText="User Name" />
+      <TextField fx:id="LogInEmail" layoutX="248.0" layoutY="192.0" promptText="Email Id" />
+      <PasswordField fx:id="LogInPassword" layoutX="246.0" layoutY="242.0" promptText="Password" />
+      <Button fx:id="LogInButton" layoutX="337.0" layoutY="275.0" mnemonicParsing="false" onAction="#LogInAction" prefHeight="25.0" prefWidth="58.0" text="LOG IN " />
+      <Button fx:id="SignUpButton" layoutX="335.0" layoutY="340.0" mnemonicParsing="false" onAction="#SignAction" text="SIGN UP" />
+      <Label layoutX="250.0" layoutY="311.0" text="Don't have an account?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
