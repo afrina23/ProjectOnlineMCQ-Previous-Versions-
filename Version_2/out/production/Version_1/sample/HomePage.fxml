@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerHome">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="640.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="199.0" layoutY="44.0" text="Online MCQ ">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="127.0" text="Mode">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Practice" layoutX="78.0" layoutY="167.0" mnemonicParsing="false" text="Practice">
+         <toggleGroup>
+            <ToggleGroup fx:id="mode" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="OnlineTest" layoutX="288.0" layoutY="167.0" mnemonicParsing="false" text="Online  test" toggleGroup="$mode" />
+      <Label layoutX="78.0" layoutY="194.0" text="Which subject do you prefer?">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="SubjectChoice" layoutX="78.0" layoutY="228.0" prefWidth="150.0" />
+      <Button layoutX="21.0" layoutY="427.0" mnemonicParsing="false" onAction="#LogOutAction" text="Log Out">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="559.0" layoutY="426.0" mnemonicParsing="false" onAction="#StartButton" text="Start">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <GridPane fx:id="GridBox" layoutX="79.0" layoutY="257.0" prefHeight="86.0" prefWidth="309.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="310.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="28.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane fx:id="Fortest" prefHeight="83.0" prefWidth="296.0">
+               <children>
+                  <Label layoutY="14.0" prefHeight="21.0" prefWidth="194.0" text="Difficulty Lavel(For Test Only)">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="Easy" layoutY="42.0" mnemonicParsing="false" text="Easy">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="level" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="Medium" layoutX="105.0" layoutY="42.0" mnemonicParsing="false" text="Medium" toggleGroup="$level" />
+                  <RadioButton fx:id="Hard" layoutX="203.0" layoutY="42.0" mnemonicParsing="false" text="Hard" toggleGroup="$level" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

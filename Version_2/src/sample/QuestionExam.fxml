@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <Label layoutX="274.0" layoutY="28.0" text="Practice">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ScrollBar layoutX="626.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="14.0" />
+   </children>
+</Pane>
